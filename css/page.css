@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box .nav_admin {
+    display: inline;
+}
+
+.info_perso {
+    padding: 10px;
+}
+
+.info_name {
+    color: white;
+}
+
+.avatar {
+    border-radius: 100px;
+    border: 5px solid rgb(0, 104, 26);
+    width: 150px;
+    height: 150px;
+}
+
+.box {
+    text-align: center;
+}
+
+.left {
+    float: left;
+}
+
+.nav_admin {
+    background-color: #01a515;
+    padding: 10px;
+    height: 100vh;
+}
+
+.dec {
+    background-color: #ffffff;
+    padding: 10px;
+    list-style-type: none;
+    border-left: 5px solid rgb(0, 104, 26);
+    transition: 1s all;
+    margin-left: 0;
+}
+
+.dec:hover {
+    transition: 1s all;
+    margin-left: 25px;
+}
+
+.ligne_gray {
+    border: 1px solid rgb(0, 104, 26);
+    width: 100%;
+}
+
+.dec a {
+    text-decoration: none;
+    color: rgb(0, 104, 26);
+}
+
+.nav_2 ul li{
+    padding: 5px;
+}
