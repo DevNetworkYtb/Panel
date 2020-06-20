@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+html{
+    background: url(../img/fond.jpg);
+    background-size: cover;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    background-color: white;
+    height: 600px;
+    width: 500px;
+    border-radius: 5px 20px 20px 5px;
+    text-align: center;
+    transition: 0.3s all;
+    border-left: 15px solid #595959;
+}
+
+.login .login_h1 {
+    font-family: 'Libre Baskerville', serif;
+    margin-left: 30%;
+    margin-right: 30%;
+    transition: 1s all;
+    padding: 0px;
+    border: 5px solid transparent;
+}
+
+.img {
+    border-radius: 100px;
+    width: 200px;
+    border: 5px solid transparent;
+}
+
+input {
+    background-color: #f4f4f4;
+    border: none;
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    color:#8b8b8b;
+    font-family: 'Libre Baskerville', serif;
+    transition: 0.3s all;
+    border: 5px solid transparent;
+}
+
+input::placeholder {
+    color: #8b8b8b;
+    font-family: 'Libre Baskerville', serif;
+}
+
+button {
+    width: 60%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    transition: 0.3s all;
+    border: 5px solid transparent;
+}
+
+button:hover {
+    transition: 0.3s all;
+    border-bottom: 5px solid gray;
+}
+
+input:focus {
+    transition: 0.3s all;
+    border-bottom: 5px solid gray;
+}
+
+.login .login_h1:hover {
+    transition: 1s all;
+    border-bottom: 5px solid gray;
+    padding-bottom: 5px;
+}
+
+.login:hover {
+    transition: 0.3s all;
+    border-left: 20px solid #595959;
+}
