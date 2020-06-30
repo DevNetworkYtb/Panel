@@ -12,53 +12,44 @@ include 'data/database.php';
                 <html lang="fr">
 
                 <head>
+                    <link rel="stylesheet" href="css/page.css">
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>Panel</title>
-                    <link rel="stylesheet" href="css/page.css">
+                    
                     <script src="https://kit.fontawesome.com/c7ea7d9c0d.js" crossorigin="anonymous"></script>
                     <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
                 </head>
 
                 <body>
                     <div class="box">
-                        <div class="nav_admin left">
-                            <div class="info_perso">
-                                <img class="avatar" src="<?php echo $data[0]['img']; ?>" alt="pp">
+                        <div class="nav_admin">
+                            <div class="head">
+                                <img src="<?php echo $data[0]['img']; ?>" alt="" class="img_avatar">
                                 <br>
-                                <h2 class="info_name">
-                                    <?php echo $data[0]['nom']; ?> <?php echo $data[0]['prenom']; ?>
-                                </h2>
-                                <br>
-                                <nav>
-                                    <ul>
-                                        <li class="dec">
-                                            <a href="page/">Paramètre</a>
+                                <h2 class="name"><?php echo $data[0]['nom'] . " " . $data[0]['prenom'] ?></h2>
+                                <nav class="nav">
+                                    <ul class="ul">
+                                        <li class="li">
+                                            <a href="" class="button_head">
+                                                Mon Profil
+                                            </a>
                                         </li>
-                                        <br>
-                                        <li class="dec">
-                                            <a href="page/dec.php">Se deconnecter</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <br>
-                                <div class="ligne_gray"></div>
-                                <br>
-                                <nav class="nav_2">
-                                    <ul>
-                                        <li class="dec">
-                                            <a href="page/">Paramètre</a>
-                                        </li>
-                                        <br>
-                                        <li class="dec">
-                                            <a href="page/dec.php">Se deconnecter</a>
+                                        <li class="li">
+                                            <a href="" class="button_head">
+                                                Me Deconnecter 
+                                            </a>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                         <div class="page">
-
+                            <div class="add">
+                                <form method="post">
+                                    <input class="add_input" type="text" ><button name="add"></button> 
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </body>
